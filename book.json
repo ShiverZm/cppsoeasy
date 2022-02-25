@@ -1,0 +1,48 @@
+{
+  "plugins": [
+    "collapsible-menu",
+    "anchor-navigation-ex",
+    "tbfed-pagefooter",
+    "disqus",
+    "summary", 
+    "toggle-chapters", 
+    "theme-comscore",
+    "book-summary-scroll-position-saver",
+    "expandable-chapters-small",
+    "code",
+    "copy-code-button"
+  ],
+  "title": "Shiver Book",
+  "description": "Shiver Book",
+  "author": "Shiver Book",
+  "language": "zh-hans",
+  "root": "./docs/",
+  "links": {
+    "sidebar": {
+      "GitHub": "https://github.com/ShiverZm",
+      "个人博客": "http://www.shiver.fun"
+    }
+  },
+  "sharing": {
+    "facebook": true,
+    "twitter": true,
+    "weibo": true,
+    "qq": true,
+    "all": [
+      "douban",
+      "google",
+      "qzone",
+      "linkedin"
+    ]
+  },
+  "pluginsConfig": {
+    "tbfed-pagefooter": {
+      "copyright": "Copyright &copy ershouche-FE 2019",
+      "modify_label": "文件修订时间：",
+      "modify_format": "YYYY-MM-DD HH:mm:ss"
+    },
+    "disqus": {
+      "shortName": "gitbookuse"
+    }
+  }
+}
