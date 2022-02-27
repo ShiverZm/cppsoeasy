@@ -8,6 +8,7 @@
   },
   "dependencies": {
     "gitbook-plugin-anchor-navigation-ex": "^1.0.14",
+    "gitbook-plugin-chapter-fold": "0.0.4",
     "gitbook-plugin-collapsible-menu": "^1.0.3",
     "gitbook-plugin-disqus": "^0.1.0",
     "gitbook-plugin-summary": "^1.1.0",

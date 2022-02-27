@@ -1,16 +1,20 @@
 {
-  "plugins": [
+   "plugins": [
+    "back-to-top-button",
+    "chapter-fold",
+    "expandable-chapters",
+    "-lunr",
+    "-search",
+    "search-pro",
+    "splitter",
+    "-sharing",
+    "sharing-plus",
+    "pageview-count",
     "collapsible-menu",
+    "hide-element",
     "anchor-navigation-ex",
     "tbfed-pagefooter",
-    "disqus",
-    "summary", 
-    "toggle-chapters", 
-    "theme-comscore",
-    "book-summary-scroll-position-saver",
-    "expandable-chapters-small",
-    "code",
-    "copy-code-button"
+    "disqus"
   ],
   "title": "Shiver Book",
   "description": "Shiver Book",
