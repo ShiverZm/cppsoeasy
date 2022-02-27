@@ -118,6 +118,8 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="1.1.3_main.cpp" />
+    <ClCompile Include="1.7.1_main.cpp" />
     <ClCompile Include="src\1.4_main.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />

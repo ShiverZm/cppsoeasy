@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 
-int main()
+int main1_4()
 {
 	char str[] = "\\\0";
 	const char* pcColor = "blue1";
