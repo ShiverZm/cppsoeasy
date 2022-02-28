@@ -1,0 +1,59 @@
+name: auto-generate-gitbook
+on:                                 #在code分支上进行push时触发  
+  push:
+    branches:
+    - code
+
+jobs:
+  main-to-gh-pages:
+    runs-on: ubuntu-latest
+        
+    steps:                          
+    - name: checkout master
+      uses: actions/checkout@v2
+      with:
+        ref: master
+            
+    - name: install nodejs
+      uses: actions/setup-node@v1
+      
+    - name: configue gitbook
+      run: |
+        npm install -g gitbook-cli          
+        gitbook install
+        npm install -g gitbook-summary
+                
+    - name: generate _book folder
+      run: |
+        cd docs
+        book sm
+        cd ..	
+        gitbook build
+        cp docs/SUMMARY.md _book
+        
+    - name: Deploy
+      uses: JamesIves/github-pages-deploy-action@releases/v3
+      with:
+        ACCESS_TOKEN: ${{ secrets.TOKEN }}
+        REPOSITORY_NAME: ShiverZm/cppsoeasy
+        BRANCH: master
+        FOLDER: _book           
+#     - name: push _book to branch pages_branch
+#       env:
+#         TOKEN: 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
+#         REF: github.com/${{github.repository}}
+#         MYEMAIL: 1113673178@qq.com                  # ！！记得修改为自己github设置的邮箱
+#         MYNAME: ${{github.repository_owner}}         
+#       run: |
+#         cd _book
+#         echo "token = ${TOKEN}"
+#         echo "mymail = ${MYEMAIL}"
+#         echo "myname = ${MYNAME}"
+#         git config --global user.email "${MYEMAIL}"
+#         git config --global user.name "${MYNAME}"
+#         git init
+#         git remote add origin "https://x-access-token:${TOKEN}@${REF}.git"
+#         git add . 
+#         git commit -m "Updated By Github Actions With Build For Github Pages"
+#         git branch -M pages_branch
+#         git push --force --quiet "https://${TOKEN}@${REF}.git" pages_branch:pages_branch
