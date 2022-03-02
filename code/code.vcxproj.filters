@@ -36,5 +36,17 @@
     <ClCompile Include="src\1.5.11_main.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
+    <ClCompile Include="5.16.1_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5.1.1_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5.1.2_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
+    <ClCompile Include="5.1.3_main.cpp">
+      <Filter>源文件</Filter>
+    </ClCompile>
   </ItemGroup>
 </Project>

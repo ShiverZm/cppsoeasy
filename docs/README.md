@@ -14,11 +14,11 @@
 
 [Cpp Reference](https://zh.cppreference.com/w/cpp/container)
 
-[帅地玩编程](https://www.iamshuaidi.com/2529.html)
+[帅地玩编程 c++面试题](https://www.iamshuaidi.com/2529.html)
 
 [C语言中文网](http://c.biancheng.net/stl/stl_basic/)
 
-
+[程序厨的算法小屋](https://www.chengxuchu.com/#/)
 
 
 

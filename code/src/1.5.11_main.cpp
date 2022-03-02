@@ -6,7 +6,7 @@ class A {
 
 };
 
-int main()
+int main1_5_11()
 {
 	int size= sizeof(A);
 	printf("%d\n", size);
