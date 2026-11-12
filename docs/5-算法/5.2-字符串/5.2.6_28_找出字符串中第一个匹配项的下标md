@@ -1,0 +1,68 @@
+# 找出字符串中第一个匹配项的下标
+https://leetcode.cn/problems/find-the-index-of-the-first-occurrence-in-a-string/
+
+# 示例
+
+# 解法
+
+## 方法1
+> 思路：双指针，分别指向两个字符串字符，只有两个指针所指的所有字符都相同才算匹配成功
+
+```cpp
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        if (haystack.size()< needle.size()){
+            return -1;
+        }
+
+        int i = 0;
+        int j = 0;
+        int n = haystack.size();
+        int m = needle.size();
+        while(i < n && j < m){
+            if(haystack[i] == needle[j]){
+                i++;
+                j++;
+            }else{
+                // 重置
+                i = i - j + 1;
+                j = 0;
+            }
+        }
+
+        return j == m? i - m:-1;
+    }
+};
+```
+
+## 方法2
+>思路：暴力破解
+
+```cpp
+class Solution {
+public:
+    int strStr(string haystack, string needle) {
+        int index = 0;
+        int n = haystack.size();
+        int m = needle.size();
+        for(int i=0; i <= n - m;i++){
+            int j=0;
+            while(j< m){
+                if(haystack[i+j] == needle[j]){
+                    j++;
+                }else{
+                    break;
+                }
+            }
+
+            if(j == m) return i;
+            
+        }
+
+        return -1;
+    }
+};
+```
+
+## 方法3 KMP

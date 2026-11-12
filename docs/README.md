@@ -6,7 +6,7 @@
 
 主要记录：
 
-1. 面试cpp的知识点（主要c++11）
+1. 面试cpp的知识点（主要c++11,部分c++14,17）
 
 2. 刷题记录
    
@@ -23,6 +23,12 @@
 [C语言中文网](http://c.biancheng.net/stl/stl_basic/)
 
 [程序厨的算法小屋](https://www.chengxuchu.com/#/)
+
+[c++ reference]()
+
+[C Primer Plus 第六版]()
+
+希望不吝指正
 
 
 
