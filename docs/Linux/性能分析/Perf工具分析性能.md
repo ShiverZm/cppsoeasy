@@ -13,7 +13,7 @@
 
 （1）由于实际业务功能比较多，所以最好每次只针对单个功能进行性能分析，这样可以避免其他功能运行时对分析结果造成干扰
 
-（2）运行的实际业务需要包含符号信息，这样才能在分析结果中看到函数名信息。windows 可以使用单独的pdb符号文件，所以debug和release版都可以使用。linux agent需要使用debug版的agent，或者自己本地编译的带符号信息的release版
+（2）运行的实际业务需要包含符号信息，这样才能在分析结果中看到函数名信息。windows 可以使用单独的pdb符号文件，所以debug和release版都可以使用。linux 需要使用debug版的，或者自己本地编译的带符号信息的release版
 
 （2）debug版相比release版多了一些额外的开销，主要消耗在tt_memmanager_alloc_debug这个函数调用上，这是因为debug 记录了每次内存分配的信息
 
